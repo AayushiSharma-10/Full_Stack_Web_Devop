@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Transitions</title>
+        <style>
+            .box1{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 50px;
+                background-color: rgb(213, 226, 29);
+                transition-property: background-color, transform;
+                transition-duration: 0.5s, 1s;
+            }
+            .box1:hover{
+                background-color: rgb(8, 183, 214);
+                transform: rotate(360deg);
+            }
+            .box2{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 50px;
+                background-color: rgb(26, 22, 236);
+                transition-property: width, height;
+                transition-duration: 0.5s, 0.5s;
+            }
+            .box2:hover{
+                width: 200px;
+                height: 200px;
+            }
+            .box3{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 50px;
+                background-color: rgb(238, 24, 202);
+                transition-property: border-radius;
+                transition-duration: 0.5s;
+            }
+            .box3:hover{
+                border-radius: 50%;
+            }
+            .box4{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 50px;
+                background-color: rgb(41, 230, 16);
+                transition-property: transform;
+                transition-duration: 0.5s;
+            }
+            .box4:hover{
+                transform: scale(3.1);
+            }
+            .box5{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 50px;
+                background-color: rgb(235, 19, 19);
+                transition-property: background-color,transform;
+                transition-duration: 0.5s, 1s;
+            }
+            .box5:hover{
+                background-color: rgb(231, 235, 15);
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                transform: rotate(360deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div>Box 1 - color + rotate 
+            <p class="box1"></p>
+        </div>
+        <div>Box 2 - size change
+            <p class="box2"></p>
+        </div>
+        <div>Box 3 - circle effect
+            <p class="box3"></p>
+        </div>
+        <div>Box 4 - scale effect
+            <p class="box4"></p>
+        </div>
+        <div>Box 5 - All effects
+            <p class="box5"></p>
+        </div>
+    </body>
+</html>
