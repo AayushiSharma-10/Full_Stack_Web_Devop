@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>CSS Features Demo</title> 
+    <style> 
+        body { 
+            background-image: url("https://www.w3schools.com/css/img_lights.jpg"); 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            font-family: Arial, sans-serif; 
+        } 
+        h1 { 
+            font-family: "Times New Roman", serif; 
+            color: darkblue; 
+        } 
+        p { 
+            font-family: Verdana, sans-serif; 
+            font-size: 16px; 
+        } 
+        .box { 
+            background-image: url("https://www.w3schools.com/css/paper.gif"); 
+            background-repeat: repeat-x; 
+            padding: 20px; 
+            margin: 20px; 
+        } 
+        a:link { 
+            color: blue; 
+            text-decoration: none; 
+            cursor: pointer; 
+        } 
+        a:visited { 
+            color: green; 
+        } 
+        a:hover { 
+            color: red; 
+            cursor: crosshair; 
+        } 
+        a:active { 
+            color: orange; 
+        }a { 
+            cursor: pointer; 
+        } 
+.layer1 { 
+position: absolute; 
+top: 250px; 
+left: 100px; 
+font-size: 30px; 
+color: red; 
+z-index: 2; 
+} 
+.layer2 { 
+position: absolute; 
+top: 280px; 
+left: 130px; 
+font-size: 30px; 
+color: blue; 
+z-index: 1; 
+} 
+</style> 
+</head> 
+<body> 
+<h1>Web Page using CSS</h1> 
+<p>This page demonstrates various CSS features.</p> 
+<div class="box"> 
+<p>This is a box with its own background image.</p> 
+</div> 
+<p> 
+<a href="https://www.google.com">Google</a> | 
+<a href="https://www.wikipedia.org">Wikipedia</a> 
+</p> 
+<div class="layer1">LAYER 1</div> 
+<div class="layer2">LAYER 2</div> 
+</body> 
+</html>
